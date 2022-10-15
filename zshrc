@@ -1,4 +1,3 @@
-
 ###########################################################################################
 # OH-MY-ZSH
 ###########################################################################################
@@ -11,22 +10,18 @@ plugins=(git kubectl zsh-autosuggestions gcloud docker)
 
 source $ZSH/oh-my-zsh.sh
 
-
 DISABLE_AUTO_UPDATE=true
 DISABLE_UPDATE_PROMPT=true
-
 
 ###########################################################################################
 # KUBE CONFIG
 ###########################################################################################
-
 
 source /usr/local/share/copy-kube-config.sh
 
 ###########################################################################################
 # DEVCONTAINER SHELL HISTORY
 ###########################################################################################
-
 
 export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_history
 
@@ -36,11 +31,9 @@ export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_histo
 
 alias gam="/home/vscode/bin/gam/gam"
 
-
 ###########################################################################################
 # ALIASES
 ###########################################################################################
 
-
-alias home="cd ${SRC}" 
-alias live="//dev/live-command/src/bin/cmd.mjs" 
+alias home="cd ${SRC}"
+alias live="${SRC}/dev/live-command/src/bin/cmd.mjs"
