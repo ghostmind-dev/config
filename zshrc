@@ -36,3 +36,4 @@ alias gam="/home/vscode/bin/gam/gam"
 ###########################################################################################
 
 alias home="cd ${SRC}"
+alias live="${SRC}/dev/src/bin/cmd.mjs"
