@@ -35,7 +35,7 @@ alias gam="/home/vscode/bin/gam/gam"
 # BUN
 ###########################################################################################
 
-export PATH=$PATH:/home/vscode/.bun/bin
+export PATH=$PATH:/home/vscode/.npm-global/bin
 
 ###########################################################################################
 # ALIASES
