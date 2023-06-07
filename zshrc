@@ -13,6 +13,24 @@ source $ZSH/oh-my-zsh.sh
 DISABLE_AUTO_UPDATE=true
 DISABLE_UPDATE_PROMPT=true
 
+# Get relative path
+relative_path() {
+    echo "${PWD/$1/}"
+}
+
+# Get current git branch
+git_branch() {
+    branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    if [ -n "$branch" ]; then
+        # need to a run command to change color on demand
+        # echo "%F{blue}(%{\e[38;5;214m%}$branch%F{blue})"
+        echo "%F{blue}(%{\e[38;5;213m%}$branch%F{blue})"
+    fi
+}
+
+# Define the prompt
+PROMPT='%F{black}➜ %F{green}$(relative_path $SRC) %F{blue}$(git_branch)%f '
+
 ###########################################################################################
 # KUBE CONFIG
 ###########################################################################################
@@ -45,4 +63,3 @@ alias home="cd ${SRC}"
 alias live="${SRC}/dev/src/bin/cmd.mjs"
 alias unique="run utils nanoid id --print"
 alias groupe="run skaffold dev --group"
-
