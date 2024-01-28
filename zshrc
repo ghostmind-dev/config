@@ -60,6 +60,6 @@ export PATH=$PATH:/home/vscode/.npm-global/bin
 ###########################################################################################
 
 alias home="cd ${SRC}"
-alias live="${SRC}/dev/src/bin/cmd.mjs"
+alias live="${SRC}/dev/app/bin/cmd.mjs"
 alias unique="run utils nanoid id --print"
 alias groupe="run skaffold dev --group"
