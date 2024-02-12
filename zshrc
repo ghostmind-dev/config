@@ -54,6 +54,7 @@ alias gam="/home/vscode/bin/gam/gam"
 ###########################################################################################
 
 export PATH=$PATH:/home/vscode/.npm-global/bin
+export PATH=$PATH:/home/vscode/.deno/bin
 
 ###########################################################################################
 # ALIASES
