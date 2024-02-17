@@ -1,8 +1,0 @@
-[user]
-	name = Francois Seguin
-	email = seguin.mtl@gmail.com
-[init]
-	defaultBranch = main
-[safe]
-	directory = *
-	directory = *
