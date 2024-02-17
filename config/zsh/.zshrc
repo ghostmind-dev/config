@@ -65,3 +65,7 @@ alias home="cd ${SRC}"
 alias live="${SRC}/dev/app/bin/cmd.mjs"
 alias unique="run utils nanoid id --print"
 alias groupe="run skaffold dev --group"
+
+###########################################################################################
+# THE END
+###########################################################################################
