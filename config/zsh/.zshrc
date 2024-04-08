@@ -71,7 +71,6 @@ export PATH=$PATH:/home/vscode/.local/bin
 
 alias home="cd ${SRC}"
 alias live="${SRC}/dev/play/bin/cmd.ts"
-alias run="${HOME}/run/play/bin/cmd.ts"
 alias unique="run utils nanoid id --print"
 alias groupe="run skaffold dev --group"
 
