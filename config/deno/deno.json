@@ -10,9 +10,5 @@
         "require-await"
       ]
     }
-  },
-  "imports":{
-    "run": "https://raw.githubusercontent.com/ghostmind-dev/run/main/run/main.ts"
   }
 }
-  
