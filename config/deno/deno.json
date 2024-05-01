@@ -12,7 +12,7 @@
     }
   },
   "imports":{
-    "run": "https://github.com/ghostmind-dev/run/blob/main/run/main.ts"
+    "run": "https://raw.githubusercontent.com/ghostmind-dev/run/main/run/main.ts"
   }
 }
   
