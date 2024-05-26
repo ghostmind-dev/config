@@ -10,5 +10,10 @@
         "require-await"
       ]
     }
+  },
+  "compilerOptions": {
+    "types": [
+      "https://raw.githubusercontent.com/ghostmind-dev/run/main/run/types/global.d.ts"
+    ]
   }
 }
