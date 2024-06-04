@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Meta Configuration",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The unique identifier for the configuration."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the configuration."
+    },
+    "description": {
+      "type": "string",
+      "description": "A description of the configuration."
+    },
+    "type": {
+      "type": "string",
+      "description": "The type of the configuration."
+    },
+    "docker": {
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "properties": {
+            "root": {
+              "type": "string",
+              "description": "Root directory for the container."
+            },
+            "image": {
+              "type": "string",
+              "description": "Docker image to be used."
+            },
+            "context_dockerfile": {
+              "type": "boolean",
+              "description": "Flag to indicate if context Dockerfile is used."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "compose": {
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "properties": {
+            "root": {
+              "type": "string",
+              "description": "Root directory for the container."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "terraform": {
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "description": "Path for the terraform configuration."
+            },
+            "global": {
+              "type": "boolean",
+              "description": "Flag to indicate if the configuration is global."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "tunnel": {
+      "type": "object",
+      "properties": {
+        "subdomain": {
+          "type": "string",
+          "description": "Subdomain for the tunnel."
+        },
+        "service": {
+          "type": "string",
+          "description": "Service URL for the tunnel."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["id", "name", "type"]
+}
