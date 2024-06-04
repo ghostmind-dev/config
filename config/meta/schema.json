@@ -19,6 +19,36 @@
       "type": "string",
       "description": "The type of the configuration."
     },
+    "global": {
+      "type": "boolean",
+      "description": "Flag to indicate if the configuration is global."
+    },
+    "compose": {
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "properties": {
+            "root": {
+              "type": "string",
+              "description": "Root directory for the container."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "custom": {
+      "type": "object",
+      "properties": {
+        "root": {
+          "type": "string",
+          "description": "path to the scripts folder"
+        }
+      },
+      "additionalProperties": false
+    },
     "docker": {
       "type": "object",
       "patternProperties": {
@@ -43,18 +73,12 @@
       },
       "additionalProperties": false
     },
-    "compose": {
+    "hasura": {
       "type": "object",
-      "patternProperties": {
-        ".*": {
-          "type": "object",
-          "properties": {
-            "root": {
-              "type": "string",
-              "description": "Root directory for the container."
-            }
-          },
-          "additionalProperties": false
+      "properties": {
+        "state": {
+          "type": "string",
+          "description": "path to the state folders"
         }
       },
       "additionalProperties": false
