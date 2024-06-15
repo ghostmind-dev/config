@@ -83,6 +83,16 @@
       },
       "additionalProperties": false
     },
+    "routines": {
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "type": "string",
+          "description": "Command to be executed for the routine."
+        }
+      },
+      "additionalProperties": false
+    },
     "terraform": {
       "type": "object",
       "patternProperties": {
