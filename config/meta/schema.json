@@ -93,6 +93,16 @@
       },
       "additionalProperties": false
     },
+    "secrets": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "type": "string",
+          "description": "Path to the base environment variables file"
+        }
+      },
+      "additionalProperties": false
+    },
     "terraform": {
       "type": "object",
       "patternProperties": {
