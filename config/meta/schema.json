@@ -83,6 +83,10 @@
       },
       "additionalProperties": false
     },
+    "port": {
+      "type": "number",
+      "description": "Port number for the application"
+    },
     "routines": {
       "type": "object",
       "patternProperties": {
