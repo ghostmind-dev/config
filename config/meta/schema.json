@@ -63,9 +63,14 @@
               "type": "string",
               "description": "Docker image to be used."
             },
-            "context_dockerfile": {
+            "env_based": {
               "type": "boolean",
               "description": "Flag to indicate if context Dockerfile is used."
+            },
+            "context_dir": {
+              "type": "string",
+              "description": "Context where the app is located."
+            },
             }
           },
           "additionalProperties": false
