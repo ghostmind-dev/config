@@ -70,7 +70,6 @@
             "context_dir": {
               "type": "string",
               "description": "Context where the app is located."
-            },
             }
           },
           "additionalProperties": false
