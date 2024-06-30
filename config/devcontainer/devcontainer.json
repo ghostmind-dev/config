@@ -26,7 +26,7 @@
   "mounts": [
     "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind",
     "source=${env:HOME}${env:USERPROFILE}/.kube,target=/usr/local/share/kube-localhost,type=bind",
-    "source=ghostmind-machine-$RUN_HISTORY_NAME,target=/commandhistory,type=volume",
+    "source=ghostmind-machine-history,target=/commandhistory,type=volume",
     "source=${env:HOME}${env:USERPROFILE}/projects/container/machine,target=/Users/francoisseguin/projects/container/machine,type=bind"
   ],
   "runArgs": [
