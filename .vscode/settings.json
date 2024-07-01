@@ -1,0 +1,45 @@
+{
+  "files.autoSave": "off",
+  "editor.formatOnSave": true,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "prettier.singleQuote": true,
+  "files.exclude": {
+    "**/.gitignore": false,
+    "**/.git": false,
+    "**/.terraform": false,
+    "**/.tfstate": false,
+    "**/.npmrc": false,
+    "**/dev/dvc-command": false,
+    "**/.env.backup": false,
+    "**/.dockerignore": false,
+    "**/dvc-command": false,
+    "**/gha**": false,
+    "**/package-lock.json": false,
+    "**/node_modules": false,
+    "**/__pycache__": false,
+    "**/.next": false,
+    "**/dist": false,
+    "**/.terraform.lock.hcl": false,
+    "**/backend.tf": false,
+    "**/versions.tf": false,
+    "**/.npmignore": false
+  },
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "vsicons.associations.folders": [
+    { "icon": "cubit", "extensions": ["zsh"], "format": "svg" },
+    { "icon": "log", "extensions": ["git"], "format": "svg" },
+    { "icon": "audio", "extensions": ["devcontainer"], "format": "svg" },
+    { "icon": "docker", "extensions": ["deno"], "format": "svg" },
+    { "icon": "e2e", "extensions": ["vscode"], "format": "svg" },
+    { "icon": "buildkite", "extensions": ["run"], "format": "svg" },
+    { "icon": "app", "extensions": ["meta"], "format": "svg" }
+  ],
+  "json.schemas": [
+    {
+      "fileMatch": ["**/meta.json"],
+      "url": "https://raw.githubusercontent.com/ghostmind-dev/config/main/config/meta/schema.json"
+    }
+  ]
+}

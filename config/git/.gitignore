@@ -84,8 +84,11 @@ __pycache__
 **/.env.preview
 **/.env.prod
 **/.env.compose
+**/.env.shared
+**/.env.remote
+**/.env.tunnel
 
-!**/.env.example
+!**/.env.template
 
 **/output.txt
 
