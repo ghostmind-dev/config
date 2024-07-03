@@ -4,7 +4,7 @@
   "terminal.integrated.defaultProfile.linux": "zsh",
   "prettier.singleQuote": true,
   "files.exclude": {
-    "**/.gitignore": true,
+    ".gitignore": true,
     "**/.git": true,
     "**/.terraform": true,
     "**/.tfstate": true,
