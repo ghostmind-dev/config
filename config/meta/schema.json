@@ -21,7 +21,7 @@
     },
     "global": {
       "type": "boolean",
-      "description": "Flag to indicate if the configuration is global."
+      "description": "Flag to indicar if the configuration is global."
     },
     "compose": {
       "type": "object",
@@ -124,6 +124,10 @@
             "global": {
               "type": "boolean",
               "description": "Flag to indicate if the configuration is global."
+            },
+            "dockerComponent": {
+              "type": "string",
+              "description": "Docker component to be used."
             }
           },
           "additionalProperties": false
