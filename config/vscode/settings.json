@@ -35,22 +35,106 @@
   "deno.config": "/home/vscode/deno.json",
   "deno.disablePaths": [],
   "vsicons.associations.folders": [
-    { "icon": "cubit", "extensions": ["library-scripts"], "format": "svg" },
-    { "icon": "log", "extensions": ["scripts"], "format": "svg" },
-    { "icon": "audio", "extensions": ["dev"], "format": "svg" },
-    { "icon": "docker", "extensions": ["container"], "format": "svg" },
-    { "icon": "e2e", "extensions": ["workflows"], "format": "svg" },
-    { "icon": "buildkite", "extensions": ["run"], "format": "svg" },
-    { "icon": "app", "extensions": ["app"], "format": "svg" }
+    {
+      "icon": "cubit",
+      "extensions": [
+        "library-scripts"
+      ],
+      "format": "svg"
+    },
+    {
+      "icon": "log",
+      "extensions": [
+        "scripts"
+      ],
+      "format": "svg"
+    },
+    {
+      "icon": "audio",
+      "extensions": [
+        "dev"
+      ],
+      "format": "svg"
+    },
+    {
+      "icon": "docker",
+      "extensions": [
+        "container"
+      ],
+      "format": "svg"
+    },
+    {
+      "icon": "e2e",
+      "extensions": [
+        "workflows"
+      ],
+      "format": "svg"
+    },
+    {
+      "icon": "buildkite",
+      "extensions": [
+        "run"
+      ],
+      "format": "svg"
+    },
+    {
+      "icon": "app",
+      "extensions": [
+        "app"
+      ],
+      "format": "svg"
+    }
   ],
   "vsicons.associations.files": [
-    { "icon": "config", "extensions": [".env.local"], "format": "svg" },
-    { "icon": "config", "extensions": [".env.prod"], "format": "svg" },
-    { "icon": "config", "extensions": [".env.dev"], "format": "svg" },
-    { "icon": "config", "extensions": [".env.remote"], "format": "svg" },
-    { "icon": "config", "extensions": [".env.shared"], "format": "svg" },
-    { "icon": "codacy", "extensions": [".env.template"], "format": "svg" },
-    { "icon": "map", "extensions": [".md"], "format": "svg" }
+    {
+      "icon": "config",
+      "extensions": [
+        ".env.local"
+      ],
+      "format": "svg"
+    },
+    {
+      "icon": "config",
+      "extensions": [
+        ".env.prod"
+      ],
+      "format": "svg"
+    },
+    {
+      "icon": "config",
+      "extensions": [
+        ".env.dev"
+      ],
+      "format": "svg"
+    },
+    {
+      "icon": "config",
+      "extensions": [
+        ".env.remote"
+      ],
+      "format": "svg"
+    },
+    {
+      "icon": "config",
+      "extensions": [
+        ".env.shared"
+      ],
+      "format": "svg"
+    },
+    {
+      "icon": "codacy",
+      "extensions": [
+        ".env.template"
+      ],
+      "format": "svg"
+    },
+    {
+      "icon": "map",
+      "extensions": [
+        ".md"
+      ],
+      "format": "svg"
+    }
   ],
   "python.analysis.diagnosticSeverityOverrides": {
     "reportMissingImports": "none",
@@ -59,8 +143,17 @@
   },
   "json.schemas": [
     {
-      "fileMatch": ["**/meta.json"],
+      "fileMatch": [
+        "**/meta.json"
+      ],
       "url": "https://raw.githubusercontent.com/ghostmind-dev/config/main/config/meta/schema.json"
     }
+  ],
+  "[dockerfile]": {
+    "editor.formatOnSave": false
+  },
+  "shellformat.effectLanguages": [
+    "dotenv",
+    "gitignore"
   ]
 }
