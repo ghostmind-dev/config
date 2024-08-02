@@ -135,6 +135,12 @@
       },
       "additionalProperties": false
     },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "tunnel": {
       "type": "object",
       "properties": {
@@ -150,5 +156,9 @@
       "additionalProperties": false
     }
   },
-  "required": ["id", "name", "type"]
+  "required": [
+    "id",
+    "name",
+    "type"
+  ]
 }
