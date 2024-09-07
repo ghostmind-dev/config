@@ -125,9 +125,13 @@
               "type": "boolean",
               "description": "Flag to indicate if the configuration is global."
             },
-            "dockerComponent": {
+            "docker_component": {
               "type": "string",
               "description": "Docker component to be used."
+            },
+            "no_container": {
+              "type": "boolean",
+              "description": "Flag to indicate if a docker container is not needed."
             }
           },
           "additionalProperties": false
