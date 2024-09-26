@@ -77,16 +77,6 @@
       },
       "additionalProperties": false
     },
-    "hasura": {
-      "type": "object",
-      "properties": {
-        "state": {
-          "type": "string",
-          "description": "path to the state folders"
-        }
-      },
-      "additionalProperties": false
-    },
     "port": {
       "type": "number",
       "description": "Port number for the application"
