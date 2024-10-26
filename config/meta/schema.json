@@ -137,14 +137,20 @@
     },
     "tunnel": {
       "type": "object",
-      "properties": {
-        "subdomain": {
-          "type": "string",
-          "description": "Subdomain for the tunnel."
-        },
-        "service": {
-          "type": "string",
-          "description": "Service URL for the tunnel."
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "properties": {
+            "hostname": {
+              "type": "string",
+              "description": "hostname for the tunnel."
+            },
+            "service": {
+              "type": "string",
+              "description": "Local service to be tunneled."
+            }
+          },
+          "additionalProperties": false
         }
       },
       "additionalProperties": false
