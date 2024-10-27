@@ -115,13 +115,12 @@
               "type": "boolean",
               "description": "Flag to indicate if the configuration is global."
             },
-            "docker_component": {
-              "type": "string",
-              "description": "Docker component to be used."
-            },
-            "no_container": {
-              "type": "boolean",
-              "description": "Flag to indicate if a docker container is not needed."
+            "containers": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "List of containers to be used."
             }
           },
           "additionalProperties": false
