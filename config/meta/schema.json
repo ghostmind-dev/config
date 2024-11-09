@@ -70,6 +70,13 @@
             "context_dir": {
               "type": "string",
               "description": "Context where the app is located."
+            },
+            "tag_modifiers": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "List of tag modifiers for the Docker image."
             }
           },
           "additionalProperties": false
