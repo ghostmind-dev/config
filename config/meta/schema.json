@@ -5,11 +5,16 @@
   "properties": {
     "id": {
       "type": "string",
-      "description": "The unique identifier for the configuration."
+      "description": "The unique identifier for the configuration.",
+      "pattern": "^[a-fA-F0-9]{12}$"
     },
     "name": {
       "type": "string",
       "description": "The name of the configuration."
+    },
+    "version": {
+      "type": "string",
+      "description": "The version of the configuration."
     },
     "description": {
       "type": "string",
@@ -61,7 +66,7 @@
             },
             "image": {
               "type": "string",
-              "description": "Docker image to be used."
+              "description": "Docker image url to be used. (example: docker.io/library/nginx:latest)",
             },
             "env_based": {
               "type": "boolean",
@@ -149,11 +154,11 @@
           "properties": {
             "hostname": {
               "type": "string",
-              "description": "hostname for the tunnel."
+              "description": "hostname for the tunnel. (example: example.com)"
             },
             "service": {
               "type": "string",
-              "description": "Local service to be tunneled."
+              "description": "Local service to be tunneled. (example: localhost:8080)"
             }
           },
           "additionalProperties": false
@@ -164,7 +169,6 @@
   },
   "required": [
     "id",
-    "name",
-    "type"
+    "name"
   ]
 }
