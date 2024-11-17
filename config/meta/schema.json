@@ -37,6 +37,10 @@
             "root": {
               "type": "string",
               "description": "Root directory for the container."
+            },
+            "filename": {
+              "type": "string",
+              "description": "Custom docker-compose filename."
             }
           },
           "additionalProperties": false
