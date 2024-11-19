@@ -42,13 +42,6 @@
               "type": "string",
               "description": "Custom docker-compose filename."
             },
-            "groups": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              },
-              "description": "List of groups this compose belongs to."
-            }
           },
           "additionalProperties": false
         }
