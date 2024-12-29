@@ -25,8 +25,8 @@
     "INIT_LOGIN_CLOUDFLARE": "true"
   },
   "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
     "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind",
-    "source=${env:HOME}${env:USERPROFILE}/.kube,target=/usr/local/share/kube-localhost,type=bind",
     "source=ghostmind-machine-history,target=/commandhistory,type=volume",
     "source=${env:HOME}${env:USERPROFILE}/projects/container/machine,target=/Users/francoisseguin/projects/container/machine,type=bind"
   ],
