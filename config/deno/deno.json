@@ -1,8 +1,12 @@
 {
   "lint": {
     "rules": {
-      "tags": ["recommended"],
-      "include": ["ban-untagged-todo"],
+      "tags": [
+        "recommended"
+      ],
+      "include": [
+        "ban-untagged-todo"
+      ],
       "exclude": [
         "no-unused-vars",
         "no-explicit-any",
@@ -10,5 +14,6 @@
         "require-await"
       ]
     }
-  }
+  },
+  "nodeModulesDir": "auto"
 }
