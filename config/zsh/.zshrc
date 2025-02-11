@@ -72,6 +72,7 @@ eval "$(pyenv init -)"
 export PATH=$PATH:/home/vscode/.npm-global/bin
 export PATH=$PATH:/home/vscode/.deno/bin
 export PATH=$PATH:/home/vscode/.local/bin
+export PATH=$PATH:/home/vscode/go/bin
 
 ###########################################################################################
 # ALIASES
