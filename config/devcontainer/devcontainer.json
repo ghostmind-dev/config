@@ -71,7 +71,8 @@
         "mariorodeghiero.vue-theme",
         "denoland.vscode-deno",
         "vscode-icons-team.vscode-icons",
-        "ms-toolsai.jupyter"
+        "ms-toolsai.jupyter",
+        "github.vscode-pull-request-github"
       ]
     }
   }
