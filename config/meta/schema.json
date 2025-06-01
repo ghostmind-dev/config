@@ -22,6 +22,10 @@
     },
     "type": {
       "type": "string",
+      "enum": [
+        "app",
+        "project"
+      ],
       "description": "The type of the configuration."
     },
     "global": {
