@@ -155,6 +155,95 @@
         "type": "string"
       }
     },
+    "mcp": {
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "command": {
+                  "type": "string",
+                  "description": "Command to execute for the MCP server."
+                },
+                "args": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Arguments for the MCP server command."
+                },
+                "env": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "description": "Environment variables for the MCP server."
+                }
+              },
+              "required": [
+                "command"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "description": "URL for the MCP server."
+                },
+                "headers": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "description": "Headers for the MCP server requests."
+                }
+              },
+              "required": [
+                "url"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "template": {
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "properties": {
+            "ignoreFolders": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "List of folders to ignore in the template."
+            },
+            "ignoreFiles": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "List of files to ignore in the template."
+            },
+            "init": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "List of initialization commands to run for the template."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
     "tunnel": {
       "type": "object",
       "patternProperties": {
