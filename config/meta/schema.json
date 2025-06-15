@@ -24,7 +24,8 @@
       "type": "string",
       "enum": [
         "app",
-        "project"
+        "project",
+        "template"
       ],
       "description": "The type of the configuration."
     },
