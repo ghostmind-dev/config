@@ -82,5 +82,11 @@
         ".env.template"
       ]
     }
-  ]
+  ],
+  "explorer.decorations.colors": true,
+  "explorer.decorations.badges": true,
+  "git.decorations.enabled": true,
+  "workbench.colorCustomizations": {
+    "gitDecoration.ignoredResourceForeground": "#d8bf20"
+  }
 }
