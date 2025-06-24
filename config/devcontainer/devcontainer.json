@@ -22,7 +22,8 @@
     "INIT_RESET_LIVE": "true",
     "INIT_LOGIN_GCP": "true",
     "INIT_LOGIN_GHCR": "false",
-    "INIT_LOGIN_CLOUDFLARE": "true"
+    "INIT_LOGIN_CLOUDFLARE": "true",
+    "WHY_AM_I_HERE": "true"
   },
   "mounts": [
     "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
