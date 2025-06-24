@@ -65,7 +65,7 @@
     "app": "app",
     "docker": "docker",
     "infra": "terraform",
-    "local": "mappings",
+    "local": "mappings"
   },
   "material-icon-theme.files.associations": {
     "**.env.base": "settings",
