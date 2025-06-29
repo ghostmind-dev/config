@@ -4,9 +4,21 @@
 
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="codespaces"
+# Use INIT_ZSH_THEME environment variable if set, otherwise default to codespaces
+if [[ -n "$INIT_ZSH_THEME" ]]; then
+    ZSH_THEME="$INIT_ZSH_THEME"
+else
+    ZSH_THEME="codespaces"
+fi
 
-plugins=(git kubectl zsh-autosuggestions gcloud docker)
+# Use INIT_ZSH_PLUGINS environment variable if set, otherwise no plugins
+if [[ -n "INIT_ZSH_PLUGINS" ]]; then
+    IFS=',' read -rA plugins_array <<<"$INIT_ZSH_PLUGINS"
+    plugins=(${plugins_array[@]// /})
+else
+    # No plugins if INIT_ZSH_PLUGINS is not set
+    plugins=()
+fi
 
 source $ZSH/oh-my-zsh.sh
 
@@ -32,35 +44,7 @@ git_branch() {
 PROMPT='%F{black}➜ %F{green}$(relative_path $SRC) %F{blue}$(git_branch)%f '
 
 ###########################################################################################
-# DEVCONTAINER SHELL HISTORY
-###########################################################################################
-
-export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_history
-
-###########################################################################################
-# GAM
-###########################################################################################
-
-if [ -n "$CODESPACES" ]; then
-    export LOCALHOST_SRC=${SRC}
-fi
-
-###########################################################################################
-# GAM
-###########################################################################################
-
-alias gam="/home/vscode/bin/gam/gam"
-
-###########################################################################################
-# PYENV
-###########################################################################################
-
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-###########################################################################################
-# BUN
+# EXPORTS
 ###########################################################################################
 
 export PATH=$PATH:/home/vscode/.npm-global/bin
@@ -74,6 +58,7 @@ export PATH=$PATH:/home/vscode/go/bin
 
 alias home="cd ${SRC}"
 alias dev="cd ${SRC}/dev"
+alias config="cursor /home/vscode/"
 
 ###########################################################################################
 # THE END
