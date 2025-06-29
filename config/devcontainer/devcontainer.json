@@ -6,8 +6,11 @@
       "PROJECT_DIR": "${env:HOME}${env:USERPROFILE}/projects/container/machine"
     }
   },
-  "overrideCommand": false,
-  "containerUser": "vscode",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/ghostmind-dev/features/zsh": {},
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  },
   "postStartCommand": "deno run --allow-all https://raw.githubusercontent.com/ghostmind-dev/init/main/init/main.ts",
   "postCreateCommand": "deno run --allow-all /usr/local/share/post-create.ts",
   "remoteUser": "vscode",
@@ -27,7 +30,6 @@
   },
   "mounts": [
     "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
-    "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind",
     "source=ghostmind-machine-history,target=/commandhistory,type=volume",
     "source=${env:HOME}${env:USERPROFILE}/projects/container/machine,target=/Users/francoisseguin/projects/container/machine,type=bind"
   ],
