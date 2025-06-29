@@ -13,8 +13,7 @@ fi
 
 # Use INIT_ZSH_PLUGINS environment variable if set, otherwise no plugins
 if [[ -n "$INIT_ZSH_PLUGINS" ]]; then
-    IFS=' ' read -rA plugins_array <<<"$INIT_ZSH_PLUGINS"
-    plugins=(${plugins_array[@]})
+    plugins=(${=INIT_ZSH_PLUGINS})
 else
     # No plugins if INIT_ZSH_PLUGINS is not set
     plugins=()
