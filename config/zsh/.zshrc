@@ -47,7 +47,7 @@ PROMPT='%F{black}➜ %F{green}$(relative_path $SRC) %F{blue}$(git_branch)%f '
 # DEVCONTAINER SHELL HISTORY
 ###########################################################################################
 
-export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.
+export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.zsh_history
 
 ###########################################################################################
 # EXPORTS
