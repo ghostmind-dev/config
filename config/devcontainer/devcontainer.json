@@ -10,11 +10,17 @@
     "ghcr.io/devcontainers/features/common-utils:2": {},
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/ghostmind-dev/features/config:latest": {},
     "ghcr.io/ghostmind-dev/features/extensions:latest": {},
     "ghcr.io/ghostmind-dev/features/themes:latest": {},
+    "ghcr.io/ghostmind-dev/features/settings:latest": {},
+    "ghcr.io/ghostmind-dev/features/init:latest": {},
     "ghcr.io/ghostmind-dev/features/zsh:latest": {
       "theme": "codespaces"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": []
     }
   },
   "postStartCommand": "deno run -A https://raw.githubusercontent.com/ghostmind-dev/init/main/init/main.ts",
@@ -26,13 +32,6 @@
     "VAULT_ROOT_TOKEN": "${localEnv:VAULT_ROOT_TOKEN}",
     "VAULT_ADDR": "${localEnv:VAULT_ADDR}"
   },
-  "containerEnv": {
-    "INIT_RESET_LIVE": "true",
-    "INIT_LOGIN_GCP": "true",
-    "INIT_LOGIN_GHCR": "false",
-    "INIT_LOGIN_CLOUDFLARE": "true",
-    "WHY_AM_I_HERE": "true"
-  },
   "mounts": [
     "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
     "source=ghostmind-machine-history,target=/commandhistory,type=volume",
@@ -42,10 +41,5 @@
     "--cap-add=CAP_IPC_LOCK",
     "--cap-add=NET_ADMIN",
     "--name=machine-devcontainer"
-  ],
-  "customizations": {
-    "vscode": {
-      "extensions": []
-    }
-  }
+  ]
 }
