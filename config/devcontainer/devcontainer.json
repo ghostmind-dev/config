@@ -15,8 +15,8 @@
       "theme": "spaceship"
     }
   },
-  "postStartCommand": "deno run --allow-all https://raw.githubusercontent.com/ghostmind-dev/init/main/init/main.ts",
-  "postCreateCommand": "deno run --allow-all /usr/local/share/post-create.ts",
+  "postStartCommand": "deno run -A https://raw.githubusercontent.com/ghostmind-dev/init/main/init/main.ts",
+  "postCreateCommand": "deno run -A /usr/local/share/post-create.ts",
   "remoteEnv": {
     "SRC": "${containerWorkspaceFolder}",
     "LOCALHOST_SRC": "${env:HOME}${env:USERPROFILE}/projects/container/machine",
