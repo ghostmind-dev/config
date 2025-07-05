@@ -2,6 +2,8 @@
 # OH-MY-ZSH
 ###########################################################################################
 
+# I've been there
+
 export ZSH=$HOME/.oh-my-zsh
 
 # Use INIT_ZSH_THEME environment variable if set, otherwise default to codespaces
@@ -40,7 +42,7 @@ git_branch() {
 }
 
 # Define the prompt
-PROMPT='%F{black}âžœ %F{green}$(relative_path $SRC) %F{blue}$(git_branch)%f '
+PROMPT='%F{black}â %F{green}$(relative_path $SRC) %F{blue}$(git_branch)%f '
 
 
 ###########################################################################################
