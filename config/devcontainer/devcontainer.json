@@ -13,17 +13,21 @@
     "ghcr.io/ghostmind-dev/features/extensions:latest": {},
     "ghcr.io/ghostmind-dev/features/themes:latest": {},
     "ghcr.io/ghostmind-dev/features/settings:latest": {},
-    "ghcr.io/ghostmind-dev/features/init:latest": {},
+    "ghcr.io/ghostmind-dev/features/init:latest": {
+      "resetLive": true
+    },
     "ghcr.io/ghostmind-dev/features/zsh:latest": {
       "theme": "codespaces"
     }
   },
   "customizations": {
     "vscode": {
-      "extensions": []
+      "extensions": [
+        "ghostmind.hide-unhide"
+      ]
     }
   },
-  "postStartCommand": "deno run -A https://raw.githubusercontent.com/ghostmind-dev/init/main/init/main.ts",
+  "postStartCommand": "deno run -A -r jsr:@ghostmind/init",
   "postCreateCommand": "deno run -A /usr/local/share/post-create.ts",
   "remoteEnv": {
     "SRC": "${containerWorkspaceFolder}",
