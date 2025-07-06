@@ -1,10 +1,7 @@
 {
   "name": "machine",
   "build": {
-    "dockerfile": "Dockerfile",
-    "args": {
-      "PROJECT_DIR": "${env:HOME}${env:USERPROFILE}/projects/container/machine"
-    }
+    "dockerfile": "Dockerfile"
   },
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {},
@@ -39,7 +36,9 @@
   "mounts": [
     "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
     "source=ghostmind-machine-history,target=/commandhistory,type=volume",
-    "source=${env:HOME}${env:USERPROFILE}/projects/container/machine,target=/Users/francoisseguin/projects/container/machine,type=bind"
+    "source=${env:HOME}${env:USERPROFILE}/projects/container/machine,target=/Users/francoisseguin/projects/container/machine,type=bind",
+    "source=${env:HOME}${env:USERPROFILE}/.cursor/mcp.json,target=/home/vscode/.cursor/mcp.json,type=bind",
+    "source=${env:HOME}${env:USERPROFILE}/projects/container/mcps,target=/Users/francoisseguin/projects/container/mcps,type=bind"
   ],
   "runArgs": [
     "--cap-add=CAP_IPC_LOCK",
