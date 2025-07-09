@@ -1,5 +1,8 @@
 {
-  "files.exclude": {},
+  "files.exclude": {
+    "**/dev": false,
+    "**/.devcontainer": false
+  },
   "deno.disablePaths": [],
   "material-icon-theme.folders.associations": {},
   "material-icon-theme.files.associations": {},
