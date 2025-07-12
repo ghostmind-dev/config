@@ -1,0 +1,105 @@
+[
+    {
+        "key": "alt+cmd+l",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "alt+cmd+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "-editor.action.transposeLetters",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "alt+cmd+s",
+        "command": "remote-containers.revealLogTerminal"
+    },
+    {
+        "key": "alt+cmd+m",
+        "command": "workbench.action.terminal.killAll"
+    },
+    {
+        "key": "alt+cmd+,",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "cmd+enter alt+cmd+;",
+        "command": "editor.action.formatSelection",
+        "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+k cmd+f",
+        "command": "-editor.action.formatSelection",
+        "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+cmd+,",
+        "command": "editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "alt+cmd+,",
+        "command": "prettier.forceFormatDocument"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.chat.newChat",
+        "when": "chatIsEnabled && inChat && chatLocation != 'editing-session'"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-workbench.action.chat.newChat",
+        "when": "chatIsEnabled && inChat && chatLocation != 'editing-session'"
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+    {
+        "key": "alt+cmd+y",
+        "command": "workbench.action.openMCPSettings"
+    },
+    {
+        "key": "alt+cmd+o",
+        "command": "-editor.action.toggleOvertypeInsertMode"
+    },
+    {
+        "key": "alt+cmd+o",
+        "command": "-workbench.action.remote.showMenu"
+    },
+    {
+        "key": "alt+cmd+o",
+        "command": "composer.openChatAsEditor"
+    },
+    {
+        "key": "alt+cmd+b",
+        "command": "-workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "alt+cmd+b",
+        "command": "composer.openAsPane"
+    }
+]
