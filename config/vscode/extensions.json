@@ -17,11 +17,13 @@
     "ms-python.python",
     "bradlc.vscode-tailwindcss",
     "denoland.vscode-deno",
+    "github.copilot-chat",
     "ghostmind.hide-unhide",
+    // THEMES
     "tinkertrain.theme-panda",
     "jdinhlife.gruvbox",
     "be5invis.vscode-icontheme-nomo-dark",
     "pkief.material-icon-theme",
     "wesbos.theme-cobalt2",
-    "github.copilot-chat"
+    "dracula-theme.theme-dracula"
 ]
