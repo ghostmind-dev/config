@@ -263,6 +263,11 @@
         }
       },
       "additionalProperties": false
+    },
+    "tmux": {
+      "type": "boolean",
+      "description": "Enable Tmux configuration setup",
+      "default": false
     }
   },
   "required": [
