@@ -1,0 +1,39 @@
+{
+  "id": "extensions",
+  "version": "1.0.6",
+  "name": "VS Code Extensions Pack",
+  "description": "Adds a curated set of VS Code extensions for development productivity and functionality",
+  "documentationURL": "https://github.com/ghostmind-dev/features/blob/main/features/src/extensions/README.md",
+  "options": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "github.vscode-pull-request-github",
+        "vscode.json-language-features",
+        "ms-azuretools.vscode-docker",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "esbenp.prettier-vscode",
+        "sdras.inbedby7pm",
+        "william-voyek.vscode-nginx",
+        "foxundermoon.shell-format",
+        "hashicorp.terraform",
+        "mikestead.dotenv",
+        "hashicorp.hcl",
+        "golang.go",
+        "graphql.vscode-graphql",
+        "graphql.vscode-graphql-syntax",
+        "mtxr.sqltools",
+        "ms-python.python",
+        "bradlc.vscode-tailwindcss",
+        "denoland.vscode-deno",
+        "ghostmind.hide-unhide",
+        "tinkertrain.theme-panda",
+        "jdinhlife.gruvbox",
+        "be5invis.vscode-icontheme-nomo-dark",
+        "pkief.material-icon-theme",
+        "wesbos.theme-cobalt2",
+        "github.copilot-chat"
+      ]
+    }
+  }
+}
