@@ -10,7 +10,7 @@ FROM ghcr.io/ghostmind-dev/dvc:base
 
 
 
-COPY library-scripts/post-create.ts /usr/local/share/
+COPY library-scripts/post-start.ts /usr/local/share/
 
 
 
