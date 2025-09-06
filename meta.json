@@ -1,7 +1,6 @@
 {
   "id": "AVI163jj9Ymd",
   "name": "config",
-  "type": "config",
   "routines": {
     "publish_extensions": "run custom publish --root=config/vscode/features/extensions",
     "publish_settings": "run custom publish --root=config/vscode/features/settings"
