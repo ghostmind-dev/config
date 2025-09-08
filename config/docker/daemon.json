@@ -1,0 +1,13 @@
+// /etc/docker/daemon.json
+{
+  "builder": {
+    "gc": {
+      "defaultKeepStorage": "20GB",
+      "enabled": true
+    }
+  },
+  "experimental": true,
+  "mtu": 1400,
+  "dns": ["1.1.1.1", "8.8.8.8"],
+  "ipv6": false
+}
