@@ -1,6 +1,6 @@
 {
   "id": "extensions",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "name": "VS Code Extensions Pack",
   "description": "Adds a curated set of VS Code extensions for development productivity and functionality",
   "documentationURL": "https://github.com/ghostmind-dev/features/blob/main/features/src/extensions/README.md",
@@ -31,6 +31,7 @@
         "anthropic.claude-code",
         "google.gemini-cli-vscode-ide-companion",
         "github.vscode-github-actions",
+        "tamasfe.even-better-toml",
         "tinkertrain.theme-panda",
         "jdinhlife.gruvbox",
         "be5invis.vscode-icontheme-nomo-dark",

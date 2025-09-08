@@ -65,6 +65,7 @@ export PATH=$PATH:/home/vscode/go/bin
 alias home="cd ${SRC}"
 alias dev="cd ${SRC}/dev"
 alias config="cursor /home/vscode/"
+alias rr="run routine"
 
 ###########################################################################################
 # THE END
