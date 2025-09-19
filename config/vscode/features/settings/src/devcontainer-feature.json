@@ -1,6 +1,6 @@
 {
   "id": "settings",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "name": "Settings",
   "description": "Configure VS Code settings for development environment",
   "documentationURL": "https://github.com/ghostmind-dev/features/tree/main/features/src/settings",
@@ -31,7 +31,8 @@
           "**/.next": true,
           "**/dist": true,
           "**/.terraform.lock.hcl": true,
-          "**/.npmignore": true
+          "**/.npmignore": true,
+          "**/.history": true
         },
         "files.associations": {
           "*.json": "jsonc",

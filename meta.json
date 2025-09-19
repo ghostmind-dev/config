@@ -3,6 +3,7 @@
   "name": "config",
   "routines": {
     "publish_extensions": "run custom publish --root=config/vscode/features/extensions",
-    "publish_settings": "run custom publish --root=config/vscode/features/settings"
+    "publish_settings": "run custom publish --root=config/vscode/features/settings",
+    "publish_ai": "run custom publish --root=config/ai/feature"
   }
 }
