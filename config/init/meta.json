@@ -1,0 +1,56 @@
+{
+  "id": "FUY5NNNYZ_d9",
+  "name": "dev",
+  "type": "app",
+  "tunnel": {
+    "default": {
+      "hostname": "config.ghostmind.app",
+      "service": "http://localhost:${PLAYWRIGHT_PORT}"
+    }
+  },
+  "routines": {
+    "storage": "hdiutil attach ${HOME}/projects.dmg",
+    "playwright": "run custom playwright",
+    "inspector": "run routine inspector"
+  },
+  "tmux": {
+    "sessions": [
+      {
+        "name": "dev",
+        "root": ".",
+        "windows": [
+          {
+            "name": "mcp",
+            "panes": [
+              {
+                "name": "top",
+                "path": "."
+              },
+              {
+                "name": "bottom",
+                "path": ".",
+                "split": "horizontal",
+                "size": "50%"
+              }
+            ]
+          },
+          {
+            "name": "window2",
+            "panes": [
+              {
+                "name": "top",
+                "path": "."
+              },
+              {
+                "name": "bottom",
+                "path": ".",
+                "split": "horizontal",
+                "size": "50%"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
