@@ -101,3 +101,22 @@ __pycache__
 
 
 **/global-*.mdc
+
+
+.env.local
+.env.preview
+.env.prod
+.env.compose
+.env.shared
+.env.remote
+.env.tunnel
+
+.env.base
+.env.local
+.env.preview
+.env.prod
+.env.compose
+.env.shared
+.env.remote
+.env.tunnel
+

@@ -5,5 +5,11 @@
     "publish_extensions": "run custom publish --root=config/vscode/features/extensions",
     "publish_settings": "run custom publish --root=config/vscode/features/settings",
     "publish_ai": "run custom publish --root=config/ai/feature"
+  },
+  "mcp": {
+    "docs": {
+      "type": "http",
+      "url": "https://docs.ghostmind.dev"
+    }
   }
 }
