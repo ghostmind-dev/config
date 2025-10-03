@@ -1,0 +1,63 @@
+{
+  "id": "SJtfHX8zO2kl",
+  "name": "start",
+  "type": "app",
+  "routines": {
+    "init-mount": "hdiutil attach ${HOME}/projects.dmg",
+    "init-inspector": "mcp-inspector",
+    "init-chrome": "mcp-proxy --port=8081 npx chrome-devtools-mcp@latest",
+    "tmux-init": "run tmux init start",
+    "tmux-attach": "run tmux attach start",
+    "tmux-terminate": "run tmux terminate start"
+  },
+  "tmux": {
+    "sessions": [
+      {
+        "name": "start",
+        "root": ".",
+        "windows": [
+          {
+            "name": "routines",
+            "layout": "sections",
+            "section": {
+              "split": "vertical",
+              "items": [
+                {
+                  "split": "horizontal",
+                  "size": "50%",
+                  "items": [
+                    {
+                      "name": "top-left",
+                      "command": "run routine init-mount",
+                      "size": "50%"
+                    },
+                    {
+                      "name": "bottom-left",
+                      "command": "run routine init-inspector",
+                      "size": "50%"
+                    }
+                  ]
+                },
+                {
+                  "split": "horizontal",
+                  "size": "50%",
+                  "items": [
+                    {
+                      "name": "top-right",
+                      "command": "run routine init-chrome",
+                      "size": "50%"
+                    },
+                    {
+                      "name": "bottom-right",
+                      "size": "50%"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
