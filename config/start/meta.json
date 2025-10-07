@@ -8,7 +8,8 @@
     "init-chrome": "mcp-proxy --port=8081 npx chrome-devtools-mcp@latest",
     "tmux-init": "run tmux init start",
     "tmux-attach": "run tmux attach start",
-    "tmux-terminate": "run tmux terminate start"
+    "tmux-terminate": "run tmux terminate start",
+    "cloudfflared_m1_tcp": "cloudflared access tcp --hostname m1-tcp.ghostmind.app --url tcp://localhost:5083"
   },
   "tmux": {
     "sessions": [

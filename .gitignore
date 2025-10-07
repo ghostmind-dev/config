@@ -120,3 +120,8 @@ __pycache__
 .env.remote
 .env.tunnel
 
+
+
+.history
+
+.mcp.json
