@@ -19,40 +19,25 @@
         "windows": [
           {
             "name": "routines",
-            "layout": "sections",
-            "section": {
-              "split": "vertical",
-              "items": [
+            "layout": "grid",
+            "grid": {
+              "type": "two-by-two",
+              "panes": [
                 {
-                  "split": "horizontal",
-                  "size": "50%",
-                  "items": [
-                    {
-                      "name": "top-left",
-                      "command": "run routine init-mount",
-                      "size": "50%"
-                    },
-                    {
-                      "name": "bottom-left",
-                      "command": "run routine init-inspector",
-                      "size": "50%"
-                    }
-                  ]
+                  "name": "top-left",
+                  "command": "run routine init-mount"
                 },
                 {
-                  "split": "horizontal",
-                  "size": "50%",
-                  "items": [
-                    {
-                      "name": "top-right",
-                      "command": "run routine init-chrome",
-                      "size": "50%"
-                    },
-                    {
-                      "name": "bottom-right",
-                      "size": "50%"
-                    }
-                  ]
+                  "name": "top-right",
+                  "command": "run routine init-chrome"
+                },
+                {
+                  "name": "bottom-left",
+                  "command": "run routine init-inspector"
+                },
+                {
+                  "name": "bottom-right",
+                  "command": "run routine cloudfflared_m1_tcp"
                 }
               ]
             }
