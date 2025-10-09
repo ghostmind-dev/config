@@ -1,11 +1,9 @@
 {
   "id": "ai",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "name": "AI",
   "description": "ai kit for development",
   "containerEnv": {
-    "CODEX_HOME": "${localEnv:RUN_PROJECT}/.creds/.codex",
-    "CLAUDE_CONFIG_DIR": "${localEnv:RUN_PROJECT}/.creds/.claude",
-    "CURSOR_CONFIG_DIR": "${localEnv:RUN_PROJECT}/.creds/.cursor"
+    "CODEX_HOME": "${localEnv:RUN_PROJECT}/.creds/codex"
   }
 }
