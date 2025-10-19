@@ -1,12 +1,12 @@
 {
   "id": "ai",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "name": "AI",
   "description": "ai kit for development",
   "containerEnv": {
-    "CODEX_HOME": "/tmp/.codex",
-    "CLAUDE_CONFIG_DIR": "/tmp/.claude",
-    "CURSOR_CONFIG_DIR": "/tmp/.cursor"
+    "CODEX_HOME": "/home/vscode/.codex",
+    "CLAUDE_CONFIG_DIR": "/home/vscode/.claude",
+    "CURSOR_CONFIG_DIR": "/home/vscode/.cursor"
   },
   "mounts": [
     {
