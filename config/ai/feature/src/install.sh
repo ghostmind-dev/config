@@ -40,6 +40,17 @@ if [ "${INIT_INSTALL_AI_TOOLS:-true}" = "true" ]; then
         echo "⚠️ uv not found, skipping MCP Proxy installation"
     fi
 
+    # Install specify-cli using uv
+    if command -v uv &> /dev/null; then
+        if uv tool install specify-cli --from git+https://github.com/github/spec-kit.git 2>/dev/null; then
+            echo "✅ Specify CLI installed successfully"
+        else
+            echo "⚠️ Failed to install Specify CLI"
+        fi
+    else
+        echo "⚠️ uv not found, skipping Specify CLI installation"
+    fi
+
     echo ""
     echo "🎉 AI tools installation completed!"
 else
