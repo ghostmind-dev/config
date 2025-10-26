@@ -1,8 +1,36 @@
 {
-    "test_enabled": {
+    "test_full_stack": {
         "image": "mcr.microsoft.com/devcontainers/base:debian-11",
         "features": {
-            "extensions": {}
+            "ghcr.io/devcontainers/features/common-utils:2": {},
+            "ghcr.io/devcontainers/features/node:1": {},
+            "ghcr.io/devcontainers/features/python:1": {},
+            "ghcr.io/devcontainers-extra/features/uv:1": {},
+            "ai": {}
+        }
+    },
+    "test_nodejs_only": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian-11",
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:2": {},
+            "ghcr.io/devcontainers/features/node:1": {},
+            "ai": {}
+        }
+    },
+    "test_python_uv_only": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian-11",
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:2": {},
+            "ghcr.io/devcontainers/features/python:1": {},
+            "ghcr.io/devcontainers-extra/features/uv:1": {},
+            "ai": {}
+        }
+    },
+    "test_minimal_dependencies": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian-11",
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:2": {},
+            "ai": {}
         }
     }
 }
