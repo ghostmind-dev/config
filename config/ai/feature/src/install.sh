@@ -41,15 +41,22 @@ if [ "${INIT_INSTALL_AI_TOOLS:-true}" = "true" ]; then
     fi
 
     # Install specify-cli using uv
+    echo "🔧 Installing Specify CLI from git+https://github.com/github/spec-kit.git..."
     if command -v uv &> /dev/null; then
-        if uv tool install specify-cli --from git+https://github.com/github/spec-kit.git 2>/dev/null; then
+        if uv tool install specify-cli --from git+https://github.com/github/spec-kit.git; then
             echo "✅ Specify CLI installed successfully"
+            echo "📍 Location: $(uv tool list | grep specify-cli || echo 'Not found in uv tool list')"
+            if command -v specify-cli &> /dev/null; then
+                echo "📍 Binary path: $(which specify-cli)"
+            fi
         else
             echo "⚠️ Failed to install Specify CLI"
         fi
     else
         echo "⚠️ uv not found, skipping Specify CLI installation"
     fi
+    echo "⏸️  Waiting 5 seconds to review Specify CLI installation output..."
+    sleep 5
 
     echo ""
     echo "🎉 AI tools installation completed!"

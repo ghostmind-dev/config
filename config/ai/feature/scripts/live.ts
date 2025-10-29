@@ -8,7 +8,7 @@ export default async function (args: CustomArgs, opts: CustomOptions) {
   $.verbose = true;
 
   // Define source paths
-  const featureSourceDir = path.join(opts.currentPath, 'feature', 'src');
+  const featureSourceDir = path.join(opts.currentPath, 'src');
   const devcontainerSourcePath = path.join(
     featureSourceDir,
     '.devcontainer',

@@ -1,11 +1,11 @@
 {
   "id": "ai",
-  "version": "0.0.9",
+  "version": "0.0.11",
   "name": "AI",
   "description": "ai kit for development",
   "containerEnv": {
     "CODEX_HOME": "/home/vscode/.codex",
-    "CLAUDE_CONFIG_DIR": ".claude",
+    "CLAUDE_CONFIG_DIR": "/home/vscode/.claude",
     "CURSOR_CONFIG_DIR": "/home/vscode/.cursor"
   },
   "mounts": [
@@ -18,6 +18,11 @@
       "source": "${localEnv:RUN_PROJECT}/.creds/.cursor",
       "target": "/home/vscode/.cursor",
       "type": "bind"
+    },
+    {
+      "source": "claude-config",
+      "target": "/home/vscode/.claude",
+      "type": "volume"
     }
   ]
 }
