@@ -1,6 +1,6 @@
 {
   "id": "ai",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "name": "AI",
   "description": "AI development kit including Claude Code, Codex, Gemini CLI, MCP tools, and Skill_Seekers (requires Python 3.10+)",
   "containerEnv": {
@@ -21,9 +21,9 @@
       "type": "bind"
     },
     {
-      "source": "claude-config",
+      "source": "${localEnv:RUN_PROJECT}/.creds/.claude",
       "target": "/home/vscode/.claude",
-      "type": "volume"
+      "type": "bind"
     }
   ]
 }
