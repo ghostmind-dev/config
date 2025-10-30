@@ -1,12 +1,13 @@
 {
   "id": "ai",
-  "version": "0.0.11",
+  "version": "0.0.14",
   "name": "AI",
-  "description": "ai kit for development",
+  "description": "AI development kit including Claude Code, Codex, Gemini CLI, MCP tools, and Skill_Seekers (requires Python 3.10+)",
   "containerEnv": {
     "CODEX_HOME": "/home/vscode/.codex",
     "CLAUDE_CONFIG_DIR": "/home/vscode/.claude",
-    "CURSOR_CONFIG_DIR": "/home/vscode/.cursor"
+    "CURSOR_CONFIG_DIR": "/home/vscode/.cursor",
+    "SKILL_SEEKERS_DIR": "/usr/local/skill_seekers"
   },
   "mounts": [
     {
