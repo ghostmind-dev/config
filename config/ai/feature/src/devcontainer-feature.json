@@ -1,25 +1,12 @@
 {
   "id": "ai",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "name": "AI",
-  "description": "AI development kit including Claude Code, Codex, Gemini CLI, MCP tools, and Skill_Seekers (requires Python 3.10+)",
+  "description": "Claude Code and MCP Proxy installation with configuration binding",
   "containerEnv": {
-    "CODEX_HOME": "/home/vscode/.codex",
-    "CLAUDE_CONFIG_DIR": "/home/vscode/.claude",
-    "CURSOR_CONFIG_DIR": "/home/vscode/.cursor",
-    "SKILL_SEEKERS_DIR": "/usr/local/skill_seekers"
+    "CLAUDE_CONFIG_DIR": "/home/vscode/.claude"
   },
   "mounts": [
-    {
-      "source": "${localEnv:RUN_PROJECT}/.creds/.codex",
-      "target": "/home/vscode/.codex",
-      "type": "bind"
-    },
-    {
-      "source": "${localEnv:RUN_PROJECT}/.creds/.cursor",
-      "target": "/home/vscode/.cursor",
-      "type": "bind"
-    },
     {
       "source": "${localEnv:RUN_PROJECT}/.creds/.claude",
       "target": "/home/vscode/.claude",
