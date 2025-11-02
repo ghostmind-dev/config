@@ -1,6 +1,6 @@
 {
   "id": "ai",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "name": "AI",
   "description": "Claude Code and MCP Proxy installation with configuration binding",
   "containerEnv": {

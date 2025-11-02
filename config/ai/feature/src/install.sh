@@ -9,7 +9,7 @@ if [ "${INIT_INSTALL_AI_TOOLS:-true}" = "true" ]; then
     echo "📦 Installing AI development tools..."
 
     # Install Claude Code
-    if npm install -g @anthropic-ai/claude-code 2>/dev/null; then
+    if curl -fsSL https://claude.ai/install.sh | bash 2>/dev/null; then
         echo "✅ Claude Code installed successfully"
     else
         echo "⚠️ Failed to install Claude Code"
