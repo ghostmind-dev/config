@@ -9,7 +9,7 @@ if [ "${INIT_INSTALL_AI_TOOLS:-true}" = "true" ]; then
     echo "📦 Installing AI development tools..."
 
     # Install Claude Code
-    if curl -fsSL https://claude.ai/install.sh | bash 2>/dev/null; then
+    if su  ${_REMOTE_USER} -c "curl -fsSL https://claude.ai/install.sh | bash" 2>/dev/null; then
         echo "✅ Claude Code installed successfully"
     else
         echo "⚠️ Failed to install Claude Code"
